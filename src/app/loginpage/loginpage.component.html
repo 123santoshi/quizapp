@@ -1,0 +1,22 @@
+<div class="wrapper">
+    <form class="p-3 mt-3" #loginForm="ngForm" (ngSubmit)="NavigateToInstructions()">
+        <div class="form-field d-flex align-items-center">
+            <span class="far fa-user"></span>
+            <input type="email" name="userName" id="userName" placeholder="Email address" minlength="1" required maxlength="30" [(ngModel)]="username_email" #userNameInput="ngModel" email>
+        </div>
+        <div *ngIf="userNameInput.invalid && (userNameInput.dirty || userNameInput.touched)" class="text-danger">
+            <div *ngIf="userNameInput.hasError('email')">
+                Please enter a valid email address.
+            </div>
+            <div *ngIf="userNameInput.hasError('required')">
+                Email is required.
+            </div>
+        </div>
+        <br>
+        <div class="form-field d-flex align-items-center">
+            <span class="fas fa-key"></span>
+            <input type="password" name="password" id="pwd" placeholder="Password" required>
+        </div>
+        <button class="btn mt-3" type="submit" [disabled]="loginForm.invalid">Login</button>
+    </form>
+</div>

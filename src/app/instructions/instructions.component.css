@@ -1,0 +1,38 @@
+
+.container {
+    width: 50%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: rgb(246, 245, 245);
+    margin: 150px auto;
+    border: 2px solid transparent;
+    border-radius:5px;
+}
+
+.heading, .modal-body, .footer {
+    margin-bottom: 15px;
+}
+
+.footer button {
+    padding: 10px;
+    margin-right: 10px;
+}
+.heading li{
+    font-weight: bold;
+}
+.note p{
+    font-weight: bold;
+    color:red;
+}
+ul li{
+    font-weight: none;
+    line-height: 30px;
+}
+.footer{
+    margin:20px 0px;
+}
+
+.footer button{
+    width:15%;
+}

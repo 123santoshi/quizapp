@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "ques": "What is the capital of France?",
+    "options": ["Berlin", "Madrid", "Paris", "Rome"],
+    "correctAnswer": "Paris"
+  },
+  {
+    "id": 2,
+    "ques": "Which programming language is commonly used for building Angular applications?",
+    "options": ["Java", "Python", "JavaScript", "C#"],
+    "correctAnswer": "JavaScript"
+  },
+  {
+    "id": 3,
+    "ques": "What does HTML stand for?",
+    "options": ["HyperText Markup Language", "High-Level Text Machine Language", "Hyperlink and Text Markup Language", "Home Tool Markup Language"],
+    "correctAnswer": "HyperText Markup Language"
+  },
+  {
+    "id": 4,
+    "ques": "In Angular, what is a component?",
+    "options": ["A service for making HTTP requests", "A building block of an Angular application", "A form control", "A module for routing"],
+    "correctAnswer": "A building block of an Angular application"
+  },
+  {
+    "id": 5,
+    "ques": "What is the purpose of ngIf directive in Angular?",
+    "options": ["To loop through an array", "To conditionally render content", "To handle user input", "To define a new module"],
+    "correctAnswer": "To conditionally render content"
+  }
+]

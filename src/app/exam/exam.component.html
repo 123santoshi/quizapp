@@ -1,0 +1,29 @@
+<div class="container">
+  <div *ngIf="curindex < totalquestions; else finish">
+    <div class="Timer">
+      <button class="btn btn-danger">{{ timer }} Sec</button>
+    </div>
+    <div class="displayquestion">
+      <div class="Question">
+        <h5>{{ curquestion.id }}. {{ curquestion.ques }}</h5>
+      </div>
+      <div class="options">
+        <div *ngFor="let option of curquestion.options">
+          <label>
+            <input type="checkbox" [value]="option" (change)="onSelectOption(option)" /> {{ option }} 
+          </label>
+        </div>
+      </div>
+      <div class="footer">
+        <button class="btn btn-primary" (click)="DisplayNextQuestion(curindex)">Next </button>
+        <button class="btn btn-danger" (click)="finishQuiz()">Finish Exam</button>
+      </div>
+    </div>
+  </div>
+</div>
+<ng-template #finish>
+  <div class="finish-button">
+    <p>You have visited all the questions. Please click on Finish button to submit your Exam</p>
+    <button class="btn btn-danger" (click)="finishQuiz()">Submit Exam</button>
+  </div>
+</ng-template>

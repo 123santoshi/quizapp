@@ -1,0 +1,22 @@
+.container {
+    margin-top: 200px;
+    width:80%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    text-align:center;
+}
+
+.table-bordered td, .table-bordered th {
+    border: 1px solid #dee2e6;
+}
+
+.pass {
+    background-color: green;
+    color: white;
+}
+
+.fail {
+    background-color: red;
+    color: white;
+}
